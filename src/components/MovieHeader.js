@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { toggleFavorites } from '../actions/favoritesActions';
 const MovieHeader = (props) => {
-    const {appTitle} = props;
-    const {displayFavorites, toggleFavorites} = props;
+    const {appTitle, displayFavorites, toggleFavorites} = props;
     
     const handleToggle=()=>{
         toggleFavorites();
